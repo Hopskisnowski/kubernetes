@@ -1,13 +1,24 @@
-# How to build
+# How to 
+## How to delete BC, running POD and image
 ```
  oc delete dc myp
  docker images
- GOOS=linux go build -o ./app .
- docker build -t in-cluster .
- docker images
  docker rmi 115250a5e1c9
+```
+## How to build Go app in local dir
+```
+ GOOS=linux go build -o ./app .
+```
+## How to build Docker container in local dir
+```
+ docker build -t in-cluster .
+```
+## How to run image in local MiniShift
+```
  oc run -i myp --image=in-cluster --image-pull-policy=Never
+```
+## How to watch log
+```
  oc get pods
  oc log myp-1-mgxtj
- oc delete dc myp 
 ```
