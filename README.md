@@ -2,8 +2,6 @@
 ## How to delete BC, running POD and image
 ```
  oc delete dc myp
- docker images
- docker rmi 115250a5e1c9
 ```
 ## How to build Go app in local dir
 ```
