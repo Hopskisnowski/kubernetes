@@ -1,5 +1,5 @@
 # How to build
-
+```
  oc delete dc myp
  docker images
  GOOS=linux go build -o ./app .
@@ -10,3 +10,4 @@
  oc get pods
  oc log myp-1-mgxtj
  oc delete dc myp 
+```
