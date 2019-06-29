@@ -77,10 +77,16 @@ func main() {
 			fmt.Println(podder.Spec)
 			fmt.Println("LABELS")
 			fmt.Println(podder.Labels)
-			fmt.Println("VOLUMES")
-			fmt.Println(podder.Volume)
-			fmt.Println("GENERATEDNAME")
-			fmt.Println(podder.GeneratedName)
+			fmt.Println("KIND")
+			fmt.Println(podder.Kind)
+			fmt.Println("NAMESPACE")
+			fmt.Println(podder.Namespace)
+			fmt.Println("GENERATENAME")
+			fmt.Println(podder.GenerateName)
+			fmt.Println("CREATIONTIMESTAMP")
+			fmt.Println(podder.CreationTimestamp)
+			// fmt.Println("CREATIONTIMESTAMP")
+			// fmt.Println(podder.CreationTimestamp)
 		}
 
 		if errors.IsNotFound(err) {
