@@ -87,6 +87,11 @@ func main() {
 			fmt.Println(podder.CreationTimestamp)
 			// fmt.Println("CREATIONTIMESTAMP")
 			// fmt.Println(podder.CreationTimestamp)
+
+			for _, managed := range podder.ManagedFields {
+				fmt.Println("MANAGEDFIELDS")
+				fmt.Println(managed.Fields)
+			}
 		}
 
 		if errors.IsNotFound(err) {
